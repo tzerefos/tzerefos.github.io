@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anargiros Tzerefos - Full-Stack Engineer specializing in Python, FastAPI, React, Docker and Kubernetes."
+    />
+    <title>Anargiros Tzerefos | Full-Stack Engineer</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --text: #111827;
+        --muted: #6b7280;
+        --line: #e5e7eb;
+        --accent: #2563eb;
+        --bg: #f3f4f6;
+        --card: #ffffff;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.7;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 70px auto;
+        padding: 0 20px;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        background: var(--card);
+        padding: 35px;
+        border-radius: 16px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+        margin-bottom: 50px;
+      }
+
+      .profile-photo {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid var(--accent);
+      }
+
+      .header-info {
+        flex: 1;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 700;
+      }
+
+      .subtitle {
+        margin-top: 6px;
+        font-weight: 500;
+        color: var(--accent);
+      }
+
+      .contact {
+        margin-top: 14px;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+
+      .contact a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .contact a:hover {
+        color: var(--accent);
+      }
+
+      .download-btn {
+        display: inline-block;
+        margin-top: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        color: var(--accent);
+      }
+
+      .download-btn:hover {
+        text-decoration: underline;
+      }
+
+      section {
+        background: var(--card);
+        padding: 35px;
+        border-radius: 16px;
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--muted);
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 0.98rem;
+      }
+
+      .job {
+        margin-bottom: 30px;
+      }
+
+      .job:last-child {
+        margin-bottom: 0;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+      }
+
+      .job-header strong {
+        font-weight: 600;
+      }
+
+      .job-header span {
+        color: var(--muted);
+      }
+
+      ul {
+        padding-left: 18px;
+      }
+
+      li {
+        margin-bottom: 6px;
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 60px;
+        font-size: 0.85rem;
+        color: var(--muted);
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .job-header {
+          flex-direction: column;
+          gap: 4px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="anargiros-photo.jpeg"
+          alt="Anargiros Tzerefos"
+          class="profile-photo"
+        />
+
+        <div class="header-info">
+          <h1>Anargiros Tzerefos</h1>
+          <div class="subtitle">Full-Stack Engineer</div>
+
+          <div class="contact">
+            Athens, Greece ·
+            <a href="mailto:tzerefos.anargiros@gmail.com">Email</a> ·
+            <a
+              href="https://www.linkedin.com/in/anargyros-tzerefos-92856316a/"
+              target="_blank"
+              >LinkedIn</a
+            >
+            ·
+            <a href="https://github.com/tzerefos" target="_blank">GitHub</a>
+          </div>
+
+          <a
+            href="anargiros-tzerefos-cv.pdf"
+            class="download-btn"
+            download="Anargiros-Tzerefos-CV.pdf"
+          >
+            Download CV (PDF)
+          </a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Profile</h2>
+        <p>
+          Full-Stack Engineer with 5+ years of experience building
+          production-grade microservice applications. Experienced in Python
+          (FastAPI, Flask, Django, Yii), React/Vue frontends, REST API design,
+          JWT authentication, containerized deployments, and CI/CD workflows.
+          Comfortable working across backend, frontend, and database layers.
+        </p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <p>
+          <strong>MSc in Data Science</strong> — NCSR Demokritos & University of
+          Peloponnese (2023)
+        </p>
+        <p style="margin-top: 8px">
+          <strong>BSc in Computer Science & Telecommunications</strong> —
+          University of Peloponnese (2019)
+        </p>
+      </section>
+
+      <section>
+        <h2>Technical Skills</h2>
+        <p>
+          <strong>Backend:</strong> Python (FastAPI, Flask, Django), Yii (PHP),
+          REST APIs, JWT · <strong>Frontend:</strong> React, Vue.js, JavaScript
+          (ES6+), CSS, MUI, Tailwind · <strong>Databases:</strong> PostgreSQL,
+          MySQL/MariaDB, MongoDB · <strong>DevOps:</strong> Docker, Kubernetes
+          (deployment usage), GitHub Actions, GitLab CI ·
+          <strong>Workflow:</strong> Apache Airflow ·
+          <strong>ML Tools:</strong> MLflow · <strong>Other:</strong> Git,
+          Ubuntu
+        </p>
+      </section>
+
+      <section>
+        <h2>Experience</h2>
+
+        <div class="job">
+          <div class="job-header">
+            <strong>Full Stack Engineer — Athena Research Center</strong>
+            <span>2019 – Present</span>
+          </div>
+          <ul>
+            <li>
+              Designed and implemented RESTful APIs using FastAPI, Flask, and
+              Django.
+            </li>
+            <li>
+              Developed and deployed Dockerized microservices to Kubernetes
+              environments.
+            </li>
+            <li>
+              Designed relational and NoSQL schemas and optimized queries
+              through indexing.
+            </li>
+            <li>
+              Built React/Vue frontend interfaces integrated with backend
+              services.
+            </li>
+            <li>
+              Implemented CI/CD pipelines with automated testing using pytest.
+            </li>
+            <li>
+              Orchestrated data pipelines with Apache Airflow and tracked ML
+              experiments using MLflow.
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <strong>
+              IT Support / Systems Administrator — Hellenic National Defense
+              School (Military Service)
+            </strong>
+            <span>2023 – 2024</span>
+          </div>
+          <ul>
+            <li>
+              Maintained secure network infrastructure and Windows Server
+              environments.
+            </li>
+            <li>Administered and extended Moodle LMS platform.</li>
+            <li>Managed WordPress-based internal systems.</li>
+            <li>
+              Provided system administration and end-user technical support.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <footer>© 2026 Anargiros Tzerefos · Full-Stack Engineer</footer>
+    </div>
+  </body>
+</html>
