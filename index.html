@@ -3,234 +3,92 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <meta
       name="description"
       content="Anargiros Tzerefos - Full-Stack Engineer specializing in Python, FastAPI, React, Docker and Kubernetes."
     />
+
     <title>Anargiros Tzerefos | Full-Stack Engineer</title>
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <style>
-      :root {
-        --text: #111827;
-        --muted: #6b7280;
-        --line: #e5e7eb;
-        --accent: #2563eb;
-        --bg: #f3f4f6;
-        --card: #ffffff;
-      }
-
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: "Inter", sans-serif;
-        background: var(--bg);
-        color: var(--text);
-        line-height: 1.7;
-      }
-
-      .container {
-        max-width: 900px;
-        margin: 70px auto;
-        padding: 0 20px;
-      }
-
-      header {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        background: var(--card);
-        padding: 35px;
-        border-radius: 16px;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
-        margin-bottom: 50px;
-      }
-
-      .profile-photo {
-        width: 130px;
-        height: 130px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid var(--accent);
-      }
-
-      .header-info {
-        flex: 1;
-      }
-
-      h1 {
-        font-size: 2.2rem;
-        font-weight: 700;
-      }
-
-      .subtitle {
-        margin-top: 6px;
-        font-weight: 500;
-        color: var(--accent);
-      }
-
-      .contact {
-        margin-top: 14px;
-        font-size: 0.95rem;
-        color: var(--muted);
-      }
-
-      .contact a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .contact a:hover {
-        color: var(--accent);
-      }
-
-      .download-btn {
-        display: inline-block;
-        margin-top: 14px;
-        font-weight: 500;
-        text-decoration: none;
-        color: var(--accent);
-      }
-
-      .download-btn:hover {
-        text-decoration: underline;
-      }
-
-      section {
-        background: var(--card);
-        padding: 35px;
-        border-radius: 16px;
-        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.03);
-        margin-bottom: 40px;
-      }
-
-      h2 {
-        font-size: 0.8rem;
-        letter-spacing: 2px;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 20px;
-      }
-
-      p {
-        font-size: 0.98rem;
-      }
-
-      .job {
-        margin-bottom: 30px;
-      }
-
-      .job:last-child {
-        margin-bottom: 0;
-      }
-
-      .job-header {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-bottom: 10px;
-        font-size: 0.95rem;
-      }
-
-      .job-header strong {
-        font-weight: 600;
-      }
-
-      .job-header span {
-        color: var(--muted);
-      }
-
-      ul {
-        padding-left: 18px;
-      }
-
-      li {
-        margin-bottom: 6px;
-      }
-
-      footer {
-        text-align: center;
-        margin-top: 60px;
-        font-size: 0.85rem;
-        color: var(--muted);
-      }
-
-      @media (max-width: 768px) {
-        header {
-          flex-direction: column;
-          text-align: center;
-        }
-
-        .job-header {
-          flex-direction: column;
-          gap: 4px;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
     <div class="container">
-      <header>
-        <img
-          src="anargiros-photo.jpeg"
-          alt="Anargiros Tzerefos"
-          class="profile-photo"
-        />
+      <header class="header">
+        <div class="profile">
+          <img
+            src="anargiros-photo.jpeg"
+            alt="Anargiros Tzerefos"
+            class="avatar"
+          />
 
-        <div class="header-info">
-          <h1>Anargiros Tzerefos</h1>
-          <div class="subtitle">Full-Stack Engineer</div>
+          <div class="info">
+            <h1>Anargiros Tzerefos</h1>
+            <h2>Full-Stack Engineer</h2>
 
-          <div class="contact">
-            Athens, Greece ·
-            <a href="mailto:tzerefos.anargiros@gmail.com">Email</a> ·
-            <a
-              href="https://www.linkedin.com/in/anargyros-tzerefos-92856316a/"
-              target="_blank"
-              >LinkedIn</a
-            >
-            ·
-            <a href="https://github.com/tzerefos" target="_blank">GitHub</a>
+            <div class="contact">
+              <span>📍 Athens, Greece</span>
+
+              <a href="mailto:your@email.com" title="Send Email">
+                <i class="fas fa-envelope"></i>
+              </a>
+
+              <a
+                href="https://linkedin.com/in/YOUR_LINKEDIN"
+                target="_blank"
+                title="Visit LinkedIn!"
+              >
+                <i class="fab fa-linkedin"></i>
+              </a>
+
+              <a
+                href="https://github.com/tzerefos"
+                target="_blank"
+                title="Visit GitHub!"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              <a class="cv-link" href="anargiros-tzerefos-cv.pdf" download title="Download CV">
+                <i class="fa-solid fa-file-arrow-down"></i>
+              </a>
+            </div>
           </div>
-
-          <a
-            href="anargiros-tzerefos-cv.pdf"
-            class="download-btn"
-            download="Anargiros-Tzerefos-CV.pdf"
-          >
-            Download CV (PDF)
-          </a>
         </div>
       </header>
 
       <section>
         <h2>Profile</h2>
+
         <p>
-          Full-Stack Engineer with 5+ years of experience building
-          production-grade microservice applications. Experienced in Python
-          (FastAPI, Flask, Django, Yii), React/Vue frontends, REST API design,
-          JWT authentication, containerized deployments, and CI/CD workflows.
-          Comfortable working across backend, frontend, and database layers.
+          Full-Stack Engineer with
+          <strong
+            >5+ years of experience building production-grade web applications
+            and microservices</strong
+          >. Skilled in Python backend development (FastAPI, Flask, Django),
+          modern frontend frameworks (React, Vue), and containerized deployments
+          with Docker and Kubernetes. Experienced in designing scalable REST
+          APIs, database architectures, CI/CD pipelines, and data workflows.
         </p>
       </section>
 
       <section>
         <h2>Education</h2>
+
         <p>
           <strong>MSc in Data Science</strong> — NCSR Demokritos & University of
           Peloponnese (2023)
         </p>
+
         <p style="margin-top: 8px">
           <strong>BSc in Computer Science & Telecommunications</strong> —
           University of Peloponnese (2019)
@@ -239,15 +97,36 @@
 
       <section>
         <h2>Technical Skills</h2>
+
         <p>
-          <strong>Backend:</strong> Python (FastAPI, Flask, Django), Yii (PHP),
-          REST APIs, JWT · <strong>Frontend:</strong> React, Vue.js, JavaScript
-          (ES6+), CSS, MUI, Tailwind · <strong>Databases:</strong> PostgreSQL,
-          MySQL/MariaDB, MongoDB · <strong>DevOps:</strong> Docker, Kubernetes
-          (deployment usage), GitHub Actions, GitLab CI ·
-          <strong>Workflow:</strong> Apache Airflow ·
-          <strong>ML Tools:</strong> MLflow · <strong>Other:</strong> Git,
-          Ubuntu
+          <strong>Backend:</strong>
+          Python (FastAPI, Flask, Django), Yii (PHP), REST API Design, JWT
+          Authentication
+
+          <br /><br />
+
+          <strong>Frontend:</strong>
+          React, Vue.js, JavaScript (ES6+), CSS, Tailwind, Material UI
+
+          <br /><br />
+
+          <strong>Databases:</strong>
+          PostgreSQL, MySQL/MariaDB, MongoDB
+
+          <br /><br />
+
+          <strong>DevOps & Infrastructure:</strong>
+          Docker, Kubernetes, GitHub Actions, GitLab CI/CD
+
+          <br /><br />
+
+          <strong>Data & ML Tools:</strong>
+          Apache Airflow, MLflow
+
+          <br /><br />
+
+          <strong>Other:</strong>
+          Git, Linux (Ubuntu)
         </p>
       </section>
 
@@ -259,29 +138,36 @@
             <strong>Full Stack Engineer — Athena Research Center</strong>
             <span>2019 – Present</span>
           </div>
+
           <ul>
             <li>
-              Designed and implemented RESTful APIs using FastAPI, Flask, and
-              Django.
+              Designed and implemented RESTful backend services using FastAPI,
+              Flask and Django.
             </li>
+
             <li>
-              Developed and deployed Dockerized microservices to Kubernetes
-              environments.
+              Developed containerized microservices deployed in Kubernetes
+              environments using Docker.
             </li>
+
             <li>
-              Designed relational and NoSQL schemas and optimized queries
-              through indexing.
+              Designed relational and NoSQL database schemas and optimized
+              performance through indexing and query tuning.
             </li>
+
             <li>
-              Built React/Vue frontend interfaces integrated with backend
-              services.
+              Developed React and Vue.js frontend interfaces integrated with
+              backend APIs.
             </li>
+
             <li>
-              Implemented CI/CD pipelines with automated testing using pytest.
+              Implemented CI/CD pipelines with automated testing using GitHub
+              Actions / GitLab CI and pytest.
             </li>
+
             <li>
-              Orchestrated data pipelines with Apache Airflow and tracked ML
-              experiments using MLflow.
+              Built and orchestrated data pipelines with Apache Airflow and
+              tracked ML experiments using MLflow.
             </li>
           </ul>
         </div>
@@ -294,13 +180,22 @@
             </strong>
             <span>2023 – 2024</span>
           </div>
+
           <ul>
             <li>
-              Maintained secure network infrastructure and Windows Server
-              environments.
+              Maintained and supported secure network infrastructure and Windows
+              Server environments.
             </li>
-            <li>Administered and extended Moodle LMS platform.</li>
-            <li>Managed WordPress-based internal systems.</li>
+
+            <li>
+              Administered and extended Moodle LMS platform used for internal
+              training systems.
+            </li>
+
+            <li>
+              Managed and maintained WordPress-based internal web platforms.
+            </li>
+
             <li>
               Provided system administration and end-user technical support.
             </li>
